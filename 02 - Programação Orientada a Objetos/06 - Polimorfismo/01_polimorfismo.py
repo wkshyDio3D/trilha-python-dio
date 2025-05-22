@@ -1,3 +1,14 @@
+
+# ---- Polimorfismo -----------
+
+# No Heranca a 'Classe Filha' herda os 'metodos' do da 'Classe pai' .
+# Porem e Possivem Modificar um 'Metodo'em uma 'Classe Filha' herdada 
+# da 'Classe Pai'. E Isso Eutil nos casos que o 'Metodo' herdado
+#  da 'classe pai' nao se encaixa perfeitamente na 'Classe filha'
+# Exemplo: Na (classe Pai     -> os Passaros Voam).
+#          Na (classe filha 1 -> o Pardal voa ).
+#          na (Classe filha 2 -> Avestruz nao voa).
+
 class Passaro:
     def voar(self):
         print("Voando...")

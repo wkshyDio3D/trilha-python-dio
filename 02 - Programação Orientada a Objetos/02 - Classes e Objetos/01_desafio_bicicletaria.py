@@ -1,4 +1,7 @@
-class Bicicleta:
+
+# ----- Cod Original sem Modificacao -------------
+
+class Bicicleta:     # Criando a minha "class bicicleta".
     def __init__(self, cor, modelo, ano, valor):
         self.cor = cor
         self.modelo = modelo

@@ -1,3 +1,8 @@
+
+# --------------- Metodo {}.values.py ------------------------
+
+# Diferente do Metodo "Keys", que retorna as chaveis.O metodo "Values" Retorna todos os Valores das chaveis.
+
 contatos = {
     "guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"},
     "giovanna@gmail.com": {"nome": "Giovanna", "telefone": "3443-2121"},

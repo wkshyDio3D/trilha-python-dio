@@ -1,3 +1,6 @@
+
+# -------- Interagindo com a TUPLA usando FOR --------
+
 carros = (
     "gol",
     "celta",

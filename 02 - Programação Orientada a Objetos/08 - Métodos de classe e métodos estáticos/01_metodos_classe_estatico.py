@@ -1,3 +1,7 @@
+
+# ----- Metodos de Classe e Metodos Estaticos ------
+# ---   cls   ---
+
 class Pessoa:
     def __init__(self, nome, idade):
         self.nome = nome

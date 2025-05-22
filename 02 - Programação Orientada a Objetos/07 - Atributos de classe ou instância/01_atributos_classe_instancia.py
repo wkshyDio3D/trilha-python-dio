@@ -1,3 +1,11 @@
+
+# ----- Variavais de Classe e Variaveis de Instancias ----
+
+# O que Sao e como Utilizar.
+# Todos os Objetos Naicem com o mesmo Numero de atributos de classe e de instancia. 
+# Os Atributos de Instancias sao diferentes para cada Objeto(Cada Objeto tem uma copia),
+#  ja os atributos de Classe sao compartilhados entre os Objetos.
+
 class Estudante:
     escola = "DIO"
 

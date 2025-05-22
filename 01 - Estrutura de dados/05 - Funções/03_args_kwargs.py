@@ -1,11 +1,25 @@
+
+# ------------ (*args, **kwargs) -------------
+
+# Podemos combinar Parametros obrigatorios com (*args, e **kwargs), Quando definidos, 
+# o metodos recebe os valores como ("tupla" ==> *args)  e ("dicionario" ==> **kwargs) respectivamente.
+# Os nomes (*args, **kwargs) sao convencoes . Mais Nao sao obrigatorios, podera ser qual quer valor ou nome. 
+# Onde o que Realmente importa sao os sinai "*" para (*args ou tupla) e "**" para (**kwargs ou dicionario).
+# Para Criar uma tupla se coloca os valores Separados por "," virgula.
+# para Criar o dicionario utilizamos os argumentos {} ==>> {"Chave":"Valor"}
+
+# def exibir_poema(data_extenso, *tupla_args, **kwargs_dicionario):
+# def exibir_poema(data_extenso, *lista, **dicionario):
 def exibir_poema(data_extenso, *args, **kwargs):
     texto = "\n".join(args)
     meta_dados = "\n".join([f"{chave.title()}: {valor}" for chave, valor in kwargs.items()])
     mensagem = f"{data_extenso}\n\n{texto}\n\n{meta_dados}"
     print(mensagem)
 
-
+# Temos uma "Tupla" de nome "exibir_poema" onde temos "Valores" separados por ", virgula ,"
+#  ==> ("valo1", "...", "valor999") dentro de uma "()chave"
 exibir_poema(
+    "Sexta-Feira, 26 de agosto de 2022 - Hoje_Quinta Feira 8 de Maio 2025",
     "Zen of Python",
     "Beautiful is better than ugly.",
     "Explicit is better than implicit.",

@@ -1,5 +1,10 @@
 from abc import ABC, abstractmethod, abstractproperty
 
+# Interfaces Definem o que uma classe deve ou nao Fazer.
+# O python Vem com um modulo Chamado 'ABC' - "abstract basic class"
+#  que define as classes Abstratas . E registrando classes concreta 
+# como implementacao da base abstrata. Para invocar a base abstrata 
+# chamaos o metodo decorado "@abstractmethod" 
 
 class ControleRemoto(ABC):
     @abstractmethod

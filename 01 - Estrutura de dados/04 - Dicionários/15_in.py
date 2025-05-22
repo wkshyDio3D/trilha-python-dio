@@ -1,3 +1,8 @@
+
+# --------------- Metodo {}.in.py ------------------------
+
+# Serve para verificar se uma chave existe ou nao no meu dicionario. Retornando True ou False
+
 contatos = {
     "guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"},
     "giovanna@gmail.com": {"nome": "Giovanna", "telefone": "3443-2121"},
