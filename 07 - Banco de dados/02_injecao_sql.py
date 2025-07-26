@@ -8,7 +8,12 @@ cursor = conexao.cursor()
 cursor.row_factory = sqlite3.Row
 
 id_cliente = input("Informe o id do cliente: ")
+
+# Essa Aqui e a forma Incorreta de buscar dados dos clientes sem Protecao e vazamentos de dados 
 cursor.execute(f"SELECT * FROM clientes WHERE id={id_cliente}")
+
+# Essa Aqui e a forma Correta de buscar dados dos clientes com Protecao e sem Vazamentos de dados .
+# cursor.execute("SELECT * FROM clientes WHERE id=?", (id_cliente,))
 
 clientes = cursor.fetchall()
 

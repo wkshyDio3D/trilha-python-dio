@@ -23,4 +23,12 @@ frutas = [
     "melancia",
 ]
 
-carros = ["ferrari", "brasilia", "gol", "up"]
+carros = ["ferrari", "brasilia", "gol", "up", "Chevrolett",]
+
+
+
+
+print(
+    "fmfmimvimpomrnfunfywbdwyqno,vrtokmgveufhtxg   " 
+    "zvq,v0emveuhcqtvzzbqmx9ekrveuheybcncx9tkv49jyhz6gwxv  ueg6t e b "
+    )

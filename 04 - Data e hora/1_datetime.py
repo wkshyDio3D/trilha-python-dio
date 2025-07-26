@@ -1,5 +1,7 @@
 from datetime import date, datetime, time
 
+# Manipulacao de Modulo datetime
+
 data = date(2023, 7, 10)
 print(data)
 print(date.today())

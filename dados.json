@@ -1,0 +1,12 @@
+{
+    "clientes": [
+        {
+            "nome": "wep",
+            "cpf": "123",
+            "endereco": "1",
+            "contas": []
+        }
+    ],
+    "contas": [],
+    "transacoes": []
+}

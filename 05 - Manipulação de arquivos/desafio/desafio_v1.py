@@ -50,7 +50,7 @@ class PessoaFisica(Cliente):
         self.data_nascimento = data_nascimento
         self.cpf = cpf
 
-    def __repr__(self) -> str:
+    def __repr__(self) -> str:  # Utilizado para criacao do arquivo de log.txt
         return f"<{self.__class__.__name__}: ('{self.cpf}')>"
 
 
@@ -226,13 +226,30 @@ class Deposito(Transacao):
         if sucesso_transacao:
             conta.historico.adicionar_transacao(self)
 
+# -------5 -Criando o Arquivo de Log chamado 'log.txt'.--com metodo with opem--------------------
+def log_transacao(func):
+    def envelope(*args, **kwargs):
+        resultado = func(*args, **kwargs)
+        data_hora = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+        with open("log.txt", "a") as arquivo:
+            f"[{data_hora}] Funcao '{func.__name__}' executada com argumentos {args} e {kwargs}. Retornou {resultado}\n"
+            # f"[{data_hora}] Função '{func.__name__}' executada com argumentos {args} e {kwargs}. Retornou {resultado}\n"
+
+        # TODO: alterar a implementação para salvar em arquivo.
+       
+        print(f"{data_hora}: {func.__name__.upper()}")
+        return resultado
+
+
+# ---------------------------------------------------------------------
 
 def log_transacao(func):
     def envelope(*args, **kwargs):
         resultado = func(*args, **kwargs)
         data_hora = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         # TODO: alterar a implementação para salvar em arquivo.
-        # f"[{data_hora}] Função '{func.__name__}' executada com argumentos {args} e {kwargs}. Retornou {result}\n"
+        # f"[{data_hora}] Função '{func.__name__}' executada com argumentos {args} e {kwargs}. Retornou {resultado}\n"
         print(f"{data_hora}: {func.__name__.upper()}")
         return resultado
 

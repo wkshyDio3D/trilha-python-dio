@@ -1,15 +1,15 @@
 
 
+# Crie uma Funcao , "elementos_comuns" que receba duas linhas
+#  de numeros inteiros separados por espaco:
 
-# Crie uma Funcao , "elementos_comuns" que receba duas linhas de numeros inteiros separados por espaco:
-
-# def elementos_comuns(tupla):
+# def elementos_comuns(tuple):
 def elementos_comuns(lista1, lista2):
     set1 = set(map(int, lista1))
     set2 = set(map(int, lista2))
     return list(set1.intersection(set2))
 
-# Leitura das listas
+print("Leitura das listas 1")
 
 lista1 = input().split()
 lista2 = input().split()
